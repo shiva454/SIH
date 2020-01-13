@@ -1,0 +1,17 @@
+
+<html>
+<body bgcolor="cyan" text=white>
+<marquee bgcolor=cyon  scrollamount=10>
+<h1 align=center behaviour=alternate>Students Grievance Support System</h1>
+</marquee>
+<table align=center>
+<tr>
+<td><b><a href="desc1.html" target="body">Home</a></td>
+<td><b><a href="Register.html" target="body">Registration</a></td>
+<td><b><a href="StudentLogin.html" target="body">StudentLogin</a></td>
+<td><b><a href="MemberLogin.html" target="body">MembersLogin</a></td>
+<td><b><a href="HeadLogin.html" target="body">HeadLogin</a></td>
+</tr>
+</table>
+</body>
+</html>
