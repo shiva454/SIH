@@ -1,33 +1,46 @@
 
-<html>
+ 
+ <html>
 <head>
 <title>Login Page</title>
 </head>
+<script type="text/javascript">
+
+  function checkForm(form)
+  {
+    if(form.username.value == "") {
+      alert("Username cannot be blank!");
+      form.username.focus();
+      return false;
+    }
+    if(form.password.value == "") {
+      alert("password cannot be blank!");
+      form.pwd1.focus();
+      return false;
+    }
+ 
+      if(form.pwd1.value == form.username.value) {
+        alert("Password must be different from Username!");
+        form.pwd1.focus();
+        return false;
+      }
+      
+       
+    
+
+    alert("You entered a valid password: " + form.pwd1.value);
+    return true;
+  }
+
+</script>
+ 
 <body bgcolor=green text=white>
-<form action=Hlogin.jsp>
+ 
+  <form ... onsubmit="return checkForm(this);" action=Hlogin.jsp>
 <h2><center>Head Login</center></h2>
 <table align=center>
-<tr><td>
-<h2>Id:</td>
-<td><input type="text" size="10" name="NAME"></td>
-<tr>
-<br><br>
-<tr>
-<td>
-<h2>Password:
-</td>
-<td>
-<input type="password"size="10"name="PASSWORD"value="">
-</td>
-</tr>
-<tr>
-<td align=right>
-<input type=reset value="reset">
-</td>
-<td>
-<input type="submit"value="Login">
-</td>
-</tr>
+  <tr><td><h2>ID:</td> <td><input type="text" name="username"></td></tr>
+<tr><td><h2>Password:</td><td> <input type="password" name="password"></td>
+ <tr><td></td><td><input type="submit" value=Login></td></tr>
 </form>
-</body>
 </html>
